@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de JavaScript</title>
+</head>
+<body>
+    <h1>Actividad #10</h1>
+    <h5>Operaciones en JS (JavaScript)</h5>
+    <hr>
+    <div>
+        <script>
+            //Declaracion de variable
+            let nombre = "Daysson"; //string
+            let edad = 25; //numero
+            let esEstudiante = false; //booleano
 
+            console.log("Nombre: ", nombre);
+            console.log("Edad: ", edad);
+            document.write("Nombre: ", nombre, " Edad: ", edad);
+
+            if  (edad >=18){
+                esEstudiante = true;
+                console.log("Es estudiante: ", esEstudiante);
+                document.write("Es estudiante: ", esEstudiante);
+            }else{
+                console.log("Es estudiante: ", esEstudiante);
+                document.write("Es estudiante: ", esEstudiante);
+            }
+        </script>
+    </div>
+    <hr>
+    <div>
+        <input type="number" class="n1" name="n1" id="n1">
+        <input type="number" class="n2" name="n1" id="n1">
+        <input type="button" value="Calcular">
+        <script>
+            let n1 = n1;
+            let n2 = n2;
+
+            let suma = n1 + n2;
+            let resta = n1 - n2;
+            let multi = n1 * n2;
+            let divi = n1 / n2;
+
+            console.log("Suma: ", suma);
+            console.log("Resta: ", resta);
+            console.log("Multiplicacion: ", multi);
+            console.log("Division: ", divi);
+
+            document.write("El resultado de la suma es: ", suma);
+            document.write("El resultado de la resta es: ", resta);
+            document.write("El resultado de la multiplicacion es: ", multi);
+            document.write("El resultado de la divi es: ", divi);
+        </script>
+
+    </div>
+    <hr>
+    <div class="Concatenar">
+        <script type="text/javascript">
+            // Concatenación de Strings y Template Literals**
+            let Equipo = "Madrid";
+            let familiar = "Tío";
+            let saludo = "Hala " + Equipo + " " + familiar + "!";
+            let saludoConTemplate = `Hala ${Equipo} ${familiar}!`;
+
+            document.write(saludo, "<br>");
+            document.write(saludoConTemplate);
+
+            console.log(saludo, "<br>");
+            console.log(saludoConTemplate);
+        </script>
+    </div>
+    <hr>
+    <div class="Comparadores">
+        <script type="text/javascript">
+            let x = 7;
+            let y = 10;
+
+            document.write("x es igual a y: ", x == y, "<br>");
+            document.write("x es diferente de y: ", x != y, "<br>");
+            document.write("x es mayor que y: ", x > y, "<br>");
+            document.write("x es menor o igual que y: ", x <= y, "<br>");
+
+            console.log("x es igual a y:", x == y);
+            console.log("x es diferente de y:", x != y);
+            console.log("x es mayor que y:", x > y);
+            console.log("x es menor o igual que y:", x <= y);
+
+        </script>
+    </div>
+    <hr>
+    <div class="Op_logicos">
+        <script type="text/javascript">
+            //Operadores Lógicos**
+            let esAdulto = true;
+            let tienePermiso = false;
+
+            let puedeEntrar = esAdulto && tienePermiso;
+            let puedeSalir = esAdulto || tienePermiso;
+            document.write("¿Puede entrar? ", puedeEntrar,"<br>");
+            document.write("¿Puede salir? ", puedeSalir,"<br>");
+            console.log("¿Puede entrar?", puedeEntrar,"<br>");
+            console.log("¿Puede salir?", puedeSalir,"<br>");
+
+        </script>
+    </div>
+</body>
+</html>
